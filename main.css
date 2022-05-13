@@ -72,6 +72,10 @@ nav{
     color: var(--morado);
     font-weight: 500;
 }
+.hidden{
+    visibility: hidden;
+    height: 0;
+}
 .active{
     border-bottom: 2px solid red;
 }
