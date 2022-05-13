@@ -205,11 +205,15 @@
 
 <section class="formularios">
     <div class="container grid form__section">
-        <form class="forms">
+        <form class="forms" method="POST" netlify-honeypot="bot-field" data-netlify="true">
             <h3>Get in Touch</h3>
+            <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don't Fill this put if you're human: <input name="bot-field"> </label>
+                    </p>
             <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
-                <input type="name" class="inputs" placeholder="Enter Your name">
-                <input type="email" class="inputs" placeholder="Enter You Email">
+                <input type="name" class="inputs" placeholder="Enter Your name" required>
+                <input type="email" class="inputs" placeholder="Enter You Email" required>
             <input type="submit" class="form__btn" value="Send">
         </form>
         <div class="info">
